@@ -1,0 +1,153 @@
+# Jamyl Premji
+# October 10th 2024
+# "World of Weekends!""
+
+#Lines 6-13 start the game
+print("Hello gamer! Welcome to the World of Weekends! You have been specifically chosen to have the best weekend ever! Before we get started, I need to remind you that this game is case sensitive so please type your answers as shown in the options.")
+print()
+print("Before we start, lets go over some ground rules. You will choose between 2 options depending on your last choice. From there, you will keep selecting events to build the dream weekend. After you choose your final normal options, there will be endings presented upon you. You will then choose the ending you desire to finalize the perfect weekend and you will be named a winner or a loser of the world of weekends. There has been only 4 people ever to beat the world of weekends game. That's all from me. See you at the end of the weekend.")
+print()
+print("Are you ready to get started?")
+descision = input("Type yes if you are ready! Type 'Yes': ")
+if descision == 'Yes':
+    print("Great Lets get started!")
+#Lines 15-42 user starts with choosing first and second activity
+print("Greetings gamer! Your time has come. To start off this busy day, you will be presented with some breakfast options. Would you rather have waffles or pancakes?")
+choice = input("Type 'waffles' or 'pancakes': ")
+if choice == 'waffles':
+    print("Great choice! Waffles are delicious. After you finish, choose what you want to do next.")
+    print()
+    print("Now that you have finished breakfast, it is time to get a move on. The clock is ticking gamer. Go ahead and choose your next activity.")
+    next_activity = input("Would you like to go shopping at the mall or play basketball? Type 'shopping' or 'basketball': ").strip().lower()
+    if next_activity == 'shopping':
+        print("Enjoy your shopping at the mall!")
+    elif next_activity == 'basketball':
+        print("Have fun playing basketball!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+
+elif choice == 'pancakes':
+    print("Nice choice! Pancakes are fluffy and tasty. Enjoy your food and choose something fun to do next!")
+    print()
+    print("Hope you enjoyed your breakfast. Lets get a move on. Choose your next activity.")
+    next_activity = input("Would you like to play video games or go to the movies? Type 'video games' or 'movies': ").strip().lower()
+    if next_activity == 'video games':
+        print("Have a blast playing video games!")
+    elif next_activity == 'movies':
+        print("Enjoy the movie!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+
+else:
+    print("Invalid choice. Please type 'waffles' or 'pancakes'.")
+#Lines 44-83 user chooses restaurant for lunch
+if next_activity == 'shopping':
+    print("New drip and kicks! Thats an awesome new outfit! The time is now 2:00 PM, lets go grab some lunch! ")
+    lunch = input("Do you want to eat at McDonald's or Burger King for lunch? Type 'McDonalds' or 'Burger King': ")
+    if lunch == 'McDonalds':
+        print("Enjoy your food! Hope you're McLovin it!")
+    elif lunch == 'Burger King':
+        print("Enjoy eating like royalty at Burger King!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+
+elif next_activity == 'basketball':
+    print("Awesome buckets! Select your next activity down below.")
+    lunch = input("Do you want to eat at The Keg or at KFC? Type 'The Keg' or 'KFC': ")
+    if lunch == 'The Keg':
+        print("Expensive choice! Enjoy your steak!")
+    elif lunch == 'KFC':
+        print("Enjoy your chicken!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+    
+elif next_activity == 'video games':
+    print("Nice Victory Royales! Lets go outside and grab some food!")
+    lunch = input("Do you want to eat at Chic-Fil-A or at Subway? Type 'Chic-Fil-A' or 'Subway':")
+    if lunch == 'Chic-Fil-A':
+        print("Amazing choice! Chic-Fil-A is my favorite!")
+    elif lunch == 'Subway':
+        print("Subway is awesome! Enjoy your food!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+
+elif next_activity == 'movies':
+    print("The new Transformers movie was awesome! Lets go grab some real food not popcorn!")
+    lunch = input("Do you want to eat at Pizza-Pizza or Wingstop? Type 'Pizza-Pizza' or 'Wingstop': ")
+    if lunch == 'Pizza-Pizza':
+        print("Enjoy your cheesy pizza!")
+    elif lunch == 'Wingstop':
+        print("Enjoy your wings!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+else:
+    print("Invalid choice. Game over. Please try again!")
+#Lines 86-151 user selects ending activity
+if lunch == 'McDonalds':
+    print("Hope you enjoyed your food! The end of the dream weekend is near so lets do something special!")
+    ending = input("To end the day off, do you want to go to a Raptors game or go Fishing? Type 'Raptors' or 'Fishing': ")
+    if ending == 'Raptors':
+        print("Looks like you were good luck for the team! Congratulations on having the best weekend ever! The Lord of weekends was very happy to have you! Thanks for playing!")
+    elif ending == 'Fishing':
+        print("Those were some awesome fish you caught! Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+
+elif lunch == 'Burger King':
+    print("Looks like you ate like royalty! The end of your weekend is here and will be rated out of 10 after your last activity!")
+    ending = input("To end the day off, do you want to go SkyDiving or go party with Drake? Type 'SkyDiving' or 'Party': ")
+    if ending == 'SkyDiving':
+        print("SkyDiving is very scary but very epic. Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+    elif ending == 'Party':
+        print("You look like the life of the party our there user! Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+    else:
+        print("Invalid choice. Please restart and enter a valid option.")
+        
+elif lunch == 'The Keg':
+    print("Ooh that hurt the bank! Hope you enjoyed the food though haha! The end of your dream weekend is here so choose your last activity!")
+    ending = input("To end the day off, do you want to go to a trampoline park or a theme park? Type 'Trampoline park' or 'Theme park': ")
+    if ending == 'Trampoline park':
+        print("You were jumping high out there! Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+    elif ending == 'Theme park':
+        print("Those rides looked scary out there! Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+
+elif lunch == 'KFC':
+    print("I hope that chicken was finger lickin good! The end of the weekend is near so lets finish it off with something fun!")
+    ending = input("To end the day off, do you want to go to a circus or go to a video game room? Type 'circus' or 'video game room': ")
+    if ending == 'Circus':
+        print("I didn't know you liked clowns riding unicycles! What a way to end the weekend! Unfortunately King weekend, does not like clowns so he has named you a loser of the world of weekends game. Feel free to try again. Thank you for playing.")
+        print("Video games are awesome and a great way to end an epic weekend! Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+
+elif lunch == 'Chic-Fil-A':
+    print("Chic-Fil-A is very delicious! To end off the weekend, pick the last epic activity before the judging period for the warriors!")
+    ending = input("To end the day off, do you want to go to a concert or a MYSTERY ending? Type 'concert' or 'MYSTERY': ")
+    if ending == 'concert':
+        print("You just watched a Lil Baby concert! That was amazing! Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+    elif ending == 'MYSTERY':
+        print("Hello. It is I, King Weekend. I see you have chosen the mystery ending. Unfortunately for you, this mystery ending contains having to restart the game. You have been named a loser until you beat the world of weekend game. Thank you for playing. ")
+
+elif lunch == 'Subway':
+    print("Hope you enjoyed your meal while it lasted. The ending is near so your time to decide your ending is here.")
+    ending = input("To end the day off, do you want to go rock climbing or MYSTERY ending? Type 'rock climbing' or 'MYSTERY2': ")
+    if ending == 'rock climbing':
+        print("That fall look like it hurt. Scary and risky. Unfortunately, you have lost the world of weekends game for that lame fall. Please feel free to replay the game. Thank you for playing.")
+    elif ending == 'MYSTERY2':
+        print("Not many users choose the MYSTERY2 option. You are a brave one which is why your mystery option has given you ultimate status in the game world of weekends. Congratulations user. Next time you log onto the game, you will have to enter your status as MYSTERYWIN2 at the end of the game. Thank you for playing.")
+
+elif lunch == 'Pizza-Pizza':
+    print("That cheesy pizza looked yummy. To end the weekend off before judgment, choose your ending activity.")
+    ending = input("To end the day off, do you want to ride a dirt bike in the sahara desert or do an escape room? Type 'bike' or 'escape room': ")
+    if ending == 'bike':
+        print("Those were some sick tricks. Great job on your weekend. Congratulations on having the best weekend ever! The lord of weekends was very happy to have you! Thanks for playing!")
+    elif ending == 'escape room':
+        print("Took you long enough to finish the escape room. Unfortunately due to the amount of time it took you, you have been named a loser of the game world of weekends. Feel free to try again. Thank you for playing")
+
+elif lunch == 'Wingstop':
+    print("Those wings looked delicious. You may now choose between the endings to finalize your weekend.")
+    ending = input("To end the day off, you have been chosen as an special user. Your 2 options are quit the game and teleport back to your normal life or a mysterious ending. Type 'Normal life' or 'Mysterious': ")
+    if ending == 'Normal life':
+        print("Thank you for playing. Feel free to attempt the game again. You will now be escorted back to your normal life. Goodbye.")
+    elif ending == 'Mysterious':
+        print("You have been named the new Lord of the weekends. This is a very special ending and you have earned it. Congratulations. Thank you for playing.")
+#Line 153 game finishes
+print("Thank you so much for playing. Have a fantastic day!")
