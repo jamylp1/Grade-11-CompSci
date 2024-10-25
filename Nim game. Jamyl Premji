@@ -1,0 +1,64 @@
+import random
+import time
+
+def display_rows(rows):
+    """Display the current state of the rows."""
+    print("Current rows:")
+    for i in range(len(rows)):
+        print(f"Row {i + 1}: {'| ' * rows[i]}")
+    time.sleep(1)  # Pause for 1 second for clarity
+
+def player_turn(player_name, rows):
+    """Handle the player's turn to choose a row and take sticks."""
+    while True:
+        try:
+            row = int(input(f"{player_name}, choose a row (1 to {len(rows)}): ")) - 1
+            if row < 0 or row >= len(rows) or rows[row] == 0:
+                print("Invalid row. Please choose again.")
+                continue
+            sticks = int(input(f"How many sticks to take from row {row + 1} (1 to {rows[row]}): "))
+            if sticks < 1 or sticks > rows[row]:
+                print("Invalid number of sticks. Please choose again.")
+                continue
+            rows[row] -= sticks
+            print(f"{player_name} took {sticks} stick(s) from row {row + 1}.")
+            break
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+def check_game_over(rows):
+    """Check if the game is over."""
+    return all(row == 0 for row in rows)
+
+def main():
+    """Main function to run the Nim game."""
+    print("Welcome to the Nim Game!")
+    time.sleep(1)
+    player1_name = input("Enter the name of Player 1: ")
+    player2_name = input("Enter the name of Player 2: ")
+
+    num_rows = int(input("Enter the number of rows: "))
+    rows = [random.randint(1, 5) for _ in range(num_rows)]
+    
+    print("Initial rows have been set up.")
+    time.sleep(1)
+
+    current_player = player1_name
+    while True:
+        display_rows(rows)
+        player_turn(current_player, rows)
+        
+        if check_game_over(rows):
+            print(f"{current_player} picked the last stick! You lose!")
+            break
+        
+        # Switch players
+        if current_player == player1_name:
+            current_player = player2_name
+        else:
+            current_player = player1_name
+
+    print("Thank you for playing the Nim Game!")
+
+if __name__ == "__main__":
+    main()
