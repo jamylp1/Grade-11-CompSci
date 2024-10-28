@@ -1,0 +1,39 @@
+#Joke Activity
+def joke_one():
+    print("Why did the scarecrow win an award? Because he was outstanding in his field!")
+def joke_two():
+    print("Why don’t skeletons fight each other? They don’t have the guts!")
+def joke_three():
+    print("What do you call fake spaghetti? An impasta!")
+def main():
+    print("Choose a joke to hear:")
+    print("1")
+    print("2")
+    print("3")
+    choice = input("Enter the number of the joke you want to hear (1-3): ")
+    if choice == '1':
+        joke_one()
+    elif choice == '2':
+        joke_two()
+    elif choice == '3':
+        joke_three()
+    else:
+        print("That's not a valid option!")
+if __name__ == "__main__":
+    main()
+
+
+#Petermeter Passing
+In programming, parameter passing is the process of passing arguments or data into functions or procedures. It specifies how input is received by the function and how it works with the given data.
+
+#Multiplication Table
+def multiplication_table():
+    number = int(input("Enter a number to generate its multiplication table: "))
+    for i in range(1, 11):  # Generates the table from 1 to 10
+        print(f"{number} x {i} = {number * i}")
+
+def main():
+    multiplication_table()
+
+if __name__ == "__main__":
+    main()
