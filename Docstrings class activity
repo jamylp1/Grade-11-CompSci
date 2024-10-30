@@ -1,0 +1,31 @@
+# Task 1: Write a docstring for a function that greets a user.
+def greet_user(name):
+    """
+    Print a greeting message for the user.
+
+    This function takes a user's name as input and prints a personalized 
+    greeting message.
+
+    Parameters:
+    name (str): The name of the user to be greeted.
+
+    Returns:
+    None: This function does not return a value; it only prints a message.
+    """
+    print(f"Hello, {name}! Welcome!")
+
+# Task #2: Write a docstring for a function that calculates the square of a number.
+def square(number):
+    """
+    Calculate the square of a given number.
+
+    This function takes a numeric input and returns its square, which is 
+    the number multiplied by itself.
+
+    Parameters:
+    number (int, float): The number to be squared.
+
+    Returns:
+    int, float: The square of the input number.
+    """
+    return number * number
