@@ -1,0 +1,53 @@
+shoe_rack = []
+
+shoe_rack.append(["trainers", "sandals"])
+shoe_rack.append(["brown shoes", "sneakers"])
+shoe_rack.append(["red pumps", "soccer shoes"])
+#prints all these items in the shoe rack
+
+print(shoe_rack)
+
+print(len(shoe_rack))
+#shows the amount of lines in the shoe rack
+
+row=shoe_rack[0]
+print(len(row))
+#shows the amount of items in the specific row
+
+shoe_rack.insert(1, ["ballet shoes", "red high heels"])
+print(shoe_rack)
+#prints only these 2 items
+
+shoe_rack=shoe_rack[0:2]
+print(shoe_rack)
+#prints only the 2 items from the previous command
+
+shoe_rack=shoe_rack[-1]
+print(shoe_rack)
+#prints the items from the rack before the last one
+
+shoe_rack=shoe_rack[:2]
+shoe_rack=shoe_rack[0:]
+print(shoe_rack)
+#prints the items from row 2 and row 0
+
+
+shoe_rack.append(["trainers", "sandals"])
+shoe_rack.append(["brown shoes", "sneakers"])
+shoe_rack.append(["red pumps", "soccer shoes"])
+#adds these new items to a new rack
+
+shoe_rack=shoe_rack[0:1] + shoe_rack[-1]
+print(shoe_rack)
+#prints only the 
+
+shoe_rack = [ ["brown shoes", "sneakers", "black high heels"], ["blue converse", "sandals", "ballet shoes"], ["red pumps", "soccer shoes", "red high heels"]]
+#prints a new shoe rack with these items
+
+shoe_rack.sort()
+print(shoe_rack)
+#sorts in alphabetical order
+
+shoe_rack.reverse()
+print(shoe_rack)
+#sorts alphabetical order backwards
