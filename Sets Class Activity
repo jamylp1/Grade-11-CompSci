@@ -1,0 +1,21 @@
+Activity #1
+def get_input_list(prompt):
+    user_input = input(prompt)
+    input_list = [int(item) for item in user_input.split()]
+    return input_list
+
+def main():
+    list1 = get_input_list("Enter the elements of the first list (separated by space): ")
+    list2 = get_input_list("Enter the elements of the second list (separated by space): ")
+    set1 = set(list1)
+    set2 = set(list2)
+    common_elements = set1.intersection(set2)
+    if common_elements:
+        print("Common elements:", common_elements)
+    else:
+        print("No common elements found.")
+
+if __name__ == "__main__":
+    main()
+
+
