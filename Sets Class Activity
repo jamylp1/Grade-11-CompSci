@@ -18,4 +18,26 @@ def main():
 if __name__ == "__main__":
     main()
 
+Activity #2
+
+colors = {"red", "green", "blue", "yellow"}
+print("Initial set of colors:", colors)
+
+colors.add("purple")
+colors.remove("green")
+print("Updated set of colors:", colors)
+
+primary_colors = {"red", "blue", "yellow"}
+
+difference = colors.difference(primary_colors)
+print("Colors in 'colors' but not in 'primary_colors':", difference)
+
+intersection = colors.intersection(primary_colors)
+print("Colors in both 'colors' and 'primary_colors':", intersection)
+
+if "orange" in colors:
+    print("Orange is in the colors set.")
+else:
+    print("Orange is not in the colors set.")
+
 
